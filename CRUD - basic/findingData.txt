@@ -1,0 +1,5 @@
+db.flightData.find({name :  "Clementine Bauch"}).pretty()
+
+db.flightData.find({bal : {$gt : 1000}}).pretty()
+
+/// Here gt = greater than
