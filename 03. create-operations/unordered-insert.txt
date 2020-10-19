@@ -1,0 +1,19 @@
+// With unordered inserts, if an error occurs during an insert of one of the documents, 
+// MongoDB continues to insert the remaining documents .
+
+db.collection_name.insertType(
+  {documents},
+   { ordered: false }
+)
+
+
+example :
+
+db.products.insertMany(
+   [
+     { _id: 20, item: "lamp", qty: 50, type: "desk" },
+     { _id: 21, item: "lamp", qty: 20, type: "floor" },
+     { _id: 22, item: "bulk", qty: 100 }
+   ],
+   { ordered: false }
+)

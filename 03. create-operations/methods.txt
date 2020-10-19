@@ -1,0 +1,17 @@
+db.collection.insert(
+   <document or array of documents>,
+   {
+     writeConcern: <document>,
+     ordered: <boolean>
+   }
+)
+
+// Insert one document
+db.collection_name.insertOne({field : "value"})
+
+// Insert Many document
+db.collection_name.insertMany([{field : "value"},{field : "value"}])
+
+// inset document -- Not recommended
+db.collection_name.insert()
+

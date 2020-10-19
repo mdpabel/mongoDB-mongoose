@@ -1,0 +1,19 @@
+{writeConcern : { w: <value>, j: <boolean>, wtimeout: <number> }}
+
+
+w : 0 => Requests no acknowledgment of the write operation
+we will get back acknowledged false ; if we find everything, we will see the document is inserted;
+the server hasn't registered this document, we just sent the request and we immediately return
+we don't wait for a response of this request
+
+So the storage engine had no chance to store it in memory and generate the objectId, we get back acknowledged false
+THIS IS SUPER FAST, we don't have to wait for any response
+
+w : 1 => Requests acknowledgment 
+Default
+
+j : true => fast, because everything is run locally 
+
+wtimeout : 200
+wtimeout : 1 // fast
+wtimeout : n

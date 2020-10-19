@@ -1,0 +1,11 @@
+mongod --dbpath path URL for db --logpath log URL
+
+//  Server start 
+net start mongoDB
+
+// Stop Server
+net stop mongoDB
+
+or
+use admin
+db.shutdownServer()
