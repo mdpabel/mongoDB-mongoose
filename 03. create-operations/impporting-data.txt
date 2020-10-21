@@ -1,0 +1,5 @@
+mongoimport file -d dbname -c collections -jsonArray --drop
+
+// NOTE :
+Since MongoDB 4.4, MongoDB Database Tools are released separately. You can read more about it here:
+https://docs.mongodb.com/database-tools/
