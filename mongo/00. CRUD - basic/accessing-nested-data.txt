@@ -1,0 +1,7 @@
+// Object
+
+db.flightData.find({"x.y.z" : "value" }).pretty()
+
+// Array 
+db.collection.findOne({test : "test"}).array
+

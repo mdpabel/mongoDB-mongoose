@@ -1,0 +1,10 @@
+1. text -> maximum amount of character in text are 16MB
+2. boolean
+3. numbers -> int32 -integer , int 64bits -Number long, Number decimal
+4. ObjectId
+5. ISODate
+6. timestamp
+7. Array
+8. Embedded documents : may only have 100 levels of embedded documents.
+
+// https://docs.mongodb.com/manual/reference/limits/
