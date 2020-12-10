@@ -1,9 +1,0 @@
-db.flightData.insertOne({name : "test"})
-db.flightData.find().pretty()
-db.flightData.updateMany({}, {$set : {toDelete : true}})
-db.flightData.findOne({distance : 1200})
-db.flightData.deleteOne({distance : 1200})
-db.flightData.deleteMany({}, {toDelete : true} )
-
-
-/// Here, flightData === collection

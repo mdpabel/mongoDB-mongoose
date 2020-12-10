@@ -1,8 +1,0 @@
-// In MongoDB, projection means selecting only the necessary data rather than selecting whole of the data of a document.  we need to set a list of fields with value 1 or 0. 1 is used to show the field while 0 is used to hide the fields.
-
-db.COLLECTION_NAME.find({},{KEY:1})
-
-db.passengers.find({}, {name : 1} )
-db.passengers.find({}, {name : 1, _id : 0})
-db.passengers.find({}, {name : 1, _id : 0, age : 1})
-db.passengers.find({}, {name : 1, _id : 0})
