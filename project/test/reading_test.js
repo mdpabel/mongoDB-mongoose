@@ -13,7 +13,7 @@ describe("Finding user", () => {
 
   it("Find all users with a name of pabel", (done) => {
     User.find({ name: "MD Pabel" }).then((users) => {
-      assert(users[1]._id.toString() === pabel._id.toString());
+      assert(users[0]._id.toString() === pabel._id.toString());
       done();
     });
   });
